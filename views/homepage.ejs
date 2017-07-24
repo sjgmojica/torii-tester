@@ -1,0 +1,117 @@
+<div class="container">
+  <h3>Torii Tester</h3>
+  </br>
+
+  <!-- <form id="authorize-form" method="GET" action="/authorizes" target="_blank"> -->
+  <form id="toriiForm">
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Client ID : </label>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="clientId" name="client_id" value="Ww0OydqOpLFEW7Z5zJpDPlk0TTapsDAo">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Client Secret : </label>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="clientSecret" name="client_secret" value="HU5jmCDjFPh5xcuquoeBN1AiHcuOHXLK">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <label>Redirect Uri : </label>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="redirectUri" name="redirect_uri" value="http://localhost:8000/">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-group">
+          <button type="button" class="btn btn-primary btn-block" id="authorize_link">Authorize</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-group">
+          <button type="button" name="token_button" id="token_id" class="btn btn-primary btn-block">Token Exchange</button>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="authCode" name="auth_code" value=""> 
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="token_id_result"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-group">
+          <button type="button" name="credential_button" id="credential_id" class="btn btn-primary btn-block">Client Credentials</button>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="client_credentials_param">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="client_credentials_result"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-group">
+          <button type="button" name="x_credential_button" id="x_credential_id" class="btn btn-primary btn-block">X Client Credentials</button>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="x_client_credentials_param">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="x_client_credentials_result"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-group">
+          <!-- <button type="button" class="btn btn-primary btn-block">Refresh Token</button> -->
+          <button type="button" name="refresh_button" id="refresh_id" class="btn btn-primary btn-block">Refresh Token</button>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="form-group">
+          <input type="text" class="form-control" id="refreshTokenParam">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="refresh_token_result">></textarea>
+        </div>
+      </div>
+    </div>
+
+  </form> 
+
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "torii-tester",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "Sarah"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sjgmojica/torii-tester",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "private": true
+}
